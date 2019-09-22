@@ -1,0 +1,84 @@
+ncaNode
+ description Demo Tree Language for Network Catalyst Application.
+ root
+ inScope abstractQuestionNode abstractIntQuestionNode abstractEnumQuestionNode
+keywordCell
+stringCell
+ highlightScope string
+intCell
+startupStageEnumCell
+ enum Concept Prototype UserTesting LessThan$1MRevenue Over$1MRevenue
+ highlightScope storage.type.enum
+sectorCell
+ enum Advertising AI&machinelearning AR&VR Autonomousvehicles,drones&robotics Biotech Blockchain,bitcoin,cryptocurrency,ethereum Consumergoods ConsumerservicesIncludessocial,digitalmedia Developertools eCommerce,shopping,retail Education Energy,cleantech Enterpriseservicesandsoftware Gaming&entertainment Finance,lending,investments,insurance,payments Food,beverage&agriculture Healthcare,medicine,meddevices,pharma Industrialgoods&manufacturing Realestate Security Space Transportation,travel Other
+ highlightScope constant.numeric.integer
+abstractQuestionNode
+ abstract
+ cells keywordCell
+ catchAllCellType stringCell
+abstractIntQuestionNode
+ abstract
+ cells keywordCell intCell
+abstractEnumQuestionNode
+ abstract
+companyNameNode
+ description Company name
+ required
+ extends abstractQuestionNode
+descriptionNode
+ description What's the 1-line descriptor for your startup?
+ extends abstractQuestionNode
+needOrOpportunityNode
+ description What need or opportunity do you address?
+ extends abstractQuestionNode
+uniqueAdvantageNode
+ description What’s your unique insight, approach or advantage?
+ extends abstractQuestionNode
+totalAddressableMarketNode
+ description How big is the market? Walk us through how this becomes a $100M revenue business.
+ extends abstractQuestionNode
+whyThisNode
+ description Why did you decide to pursue this? What, if any, relevant background do you and/or your team have?
+ extends abstractQuestionNode
+howWillYouAttractUsersNode
+ description How will you attract users?
+ extends abstractQuestionNode
+howWillWeEarnMoneyNode
+ description How do you...or will you...earn money?
+ extends abstractQuestionNode
+competitorsNode
+ description What competitors or alternatives matter? How are you different & better?
+ extends abstractQuestionNode
+whatKeepsYouUpAtNightNode
+ description Who or what worries you? What keeps you up at night?
+ extends abstractQuestionNode
+startupStageNode
+ description Which best describes your stage as a startup?
+ required
+ extends abstractEnumQuestionNode
+ cells keywordCell startupStageEnumCell
+tractionNode
+ description In a nutshell, summarize your traction to-date.
+ extends abstractQuestionNode
+topPrioritiesNode
+ description What goals or milestones are your top priorities?
+ extends abstractQuestionNode
+monthlyBurnNode
+ description What is your monthly cash burn?
+ extends abstractIntQuestionNode
+runwayMonthsNode
+ description How many months of runway do you have?
+ extends abstractIntQuestionNode
+fundraisingProcessNode
+ description If you plan to raise money, what will your fundraising process look like?
+ extends abstractQuestionNode
+pitchDeckNode
+ description Upload your pitch deck, if you'd like.
+ extends abstractQuestionNode
+sectorNode
+ description Which sector best fits your startup? Pick just 1. Know this can be tricky!
+ extends abstractQuestionNode
+ cells keywordCell sectorCell
+emailAddressNode
+ description What's your email address?
+ extends abstractQuestionNode
