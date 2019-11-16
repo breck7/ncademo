@@ -20,65 +20,85 @@ abstractIntQuestionNode
  abstract
  cells keywordCell intCell
 abstractEnumQuestionNode
+ crux abstractEnumQuestion
  abstract
 companyNameNode
+ crux companyName
  description Company name
  required
  extends abstractQuestionNode
 descriptionNode
+ crux description
  description What's the 1-line descriptor for your startup?
  extends abstractQuestionNode
 needOrOpportunityNode
+ crux needOrOpportunity
  description What need or opportunity do you address?
  extends abstractQuestionNode
 uniqueAdvantageNode
+ crux uniqueAdvantage
  description What’s your unique insight, approach or advantage?
  extends abstractQuestionNode
 totalAddressableMarketNode
+ crux totalAddressableMarket
  description How big is the market? Walk us through how this becomes a $100M revenue business.
  extends abstractQuestionNode
 whyThisNode
+ crux whyThis
  description Why did you decide to pursue this? What, if any, relevant background do you and/or your team have?
  extends abstractQuestionNode
 howWillYouAttractUsersNode
+ crux howWillYouAttractUsers
  description How will you attract users?
  extends abstractQuestionNode
 howWillWeEarnMoneyNode
+ crux howWillWeEarnMoney
  description How do you...or will you...earn money?
  extends abstractQuestionNode
 competitorsNode
+ crux competitors
  description What competitors or alternatives matter? How are you different & better?
  extends abstractQuestionNode
 whatKeepsYouUpAtNightNode
+ crux whatKeepsYouUpAtNight
  description Who or what worries you? What keeps you up at night?
  extends abstractQuestionNode
 startupStageNode
+ crux startupStage
  description Which best describes your stage as a startup?
  required
  extends abstractEnumQuestionNode
  cells keywordCell startupStageEnumCell
 tractionNode
+ crux traction
  description In a nutshell, summarize your traction to-date.
  extends abstractQuestionNode
 topPrioritiesNode
+ crux topPriorities
  description What goals or milestones are your top priorities?
  extends abstractQuestionNode
 monthlyBurnNode
+ crux monthlyBurn
  description What is your monthly cash burn?
  extends abstractIntQuestionNode
 runwayMonthsNode
+ crux runwayMonths
  description How many months of runway do you have?
  extends abstractIntQuestionNode
 fundraisingProcessNode
+ crux fundraisingProcess
  description If you plan to raise money, what will your fundraising process look like?
  extends abstractQuestionNode
 pitchDeckNode
+ crux pitchDeck
  description Upload your pitch deck, if you'd like.
  extends abstractQuestionNode
 sectorNode
+ crux sector
  description Which sector best fits your startup? Pick just 1. Know this can be tricky!
  extends abstractQuestionNode
  cells keywordCell sectorCell
 emailAddressNode
+ crux emailAddress
  description What's your email address?
  extends abstractQuestionNode
